@@ -47,8 +47,12 @@ class testAnalysis:
         for res in result:
             for j in range(len(res)):
                 print(res[j])
-                res_label = Label(self.test_window, text=res[j])
-                res_label.grid(row=i+1, column=j)
+                if j == len(res)-2:
+                    res_label = Label(self.test_window, text=res[j].replace('\\n', '\n'), justify="left")
+                    res_label.grid(row=i+1, column=j)
+                else:
+                    res_label = Label(self.test_window, text=res[j])
+                    res_label.grid(row=i+1, column=j)
             i+=1
         
         myDB.close()
