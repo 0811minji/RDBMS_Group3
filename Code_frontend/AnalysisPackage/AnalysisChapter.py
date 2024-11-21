@@ -50,7 +50,7 @@ class chapterAnalysis:
             connection = mysql.connector.connect(
                 host="localhost",
                 user="root",
-                passwd="tjsgud8871!",
+                passwd="5749",
                 database="math"
             )
             print("Database connected successfully!")
