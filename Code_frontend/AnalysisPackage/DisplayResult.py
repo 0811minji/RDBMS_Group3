@@ -12,9 +12,15 @@ class displayResult:
 
         k = 0
         for cols in self.columns:
-            res_label = Label(self.frame, text=cols)
-            res_label.grid(row=2, column=k)
-            k+=1
+            res_label = Label(
+                self.frame, 
+                text=cols, 
+                font=("Arial", 10, "bold"),  # 굵은 글씨체
+                bg="azure",                 # 배경색 추가
+                #width=col_widths[k] + 2 
+            )
+            res_label.grid(row=2, column=k, padx=5, pady=5)  # 패딩 추가
+            k += 1
         
         i = 2
         for res in self.result:
@@ -29,7 +35,6 @@ class displayResult:
             i+=1
 
     def others(self, idx):
-
         k = 0
         for cols in self.columns:
             res_label = Label(self.frame, text=cols)

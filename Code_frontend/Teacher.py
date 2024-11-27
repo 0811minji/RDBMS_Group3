@@ -2,7 +2,6 @@ from tkinter import *
 from OpenWindow import OpenWindow
 from AnalysisPackage.AnalysisChapter import chapterAnalysis
 
-
 def analysis_selected(value):
     
     global frame_entry
@@ -79,3 +78,4 @@ def open_teacher_window():
     for idx, (analy, mode) in enumerate(modes):
         Radiobutton(frame_button, text=analy, variable=analysis, value=mode,
                     command=lambda: analysis_selected(analysis.get())).grid(row=0, column=5*idx, padx=5, pady=8)
+    

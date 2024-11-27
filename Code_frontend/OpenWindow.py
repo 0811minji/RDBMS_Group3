@@ -62,7 +62,7 @@ class OpenWindow:
         label.grid(row=0, column=0)
         test_analysis = testAnalysis(top, testID)
         test_analysis.check_knowledge()
-        test_analysis.calculate_correct_ratio()
+        #test_analysis.calculate_correct_ratio()
 
     def LearnerWindow(self):
 

@@ -7,13 +7,12 @@ def create_pwEntry():
 
     pwEntry.bind("<Return>", lambda event: open_teacher_window())
 
-    if idEntry == "teacher" and pwEntry == "teacher*":
+    if idEntry == "ddd" and pwEntry == "ddd":
         open_teacher_window()
     '''
     elif idEntry+'*'==pwEntry: #regex로 id 조건 추가
         open_learner_window()
     '''
-    
 
 window = Tk()
 
